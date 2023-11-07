@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('https://www.firstinsight.com/hubfs/ar%20and%20chatbot.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  /* Global Styles */
+  
+  header {
+    /*background-color: #333;  Dark blur background color */
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Chat Window Styles */
+  .chat-window {
+    width: 500px;
+    background-color: #444; /* Dark blur background color */
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  /* Change the color of the scroll bar track */
+.chat-area {
+    scrollbar-width: thin;
+    scrollbar-color: #666 #444; /* Track color and thumb color */
+  }
+  
+  /* Change the color of the scroll bar thumb */
+  .chat-area::-webkit-scrollbar {
+    width: 12px; /* Width of the scroll bar */
+  }
+  
+  .chat-area::-webkit-scrollbar-thumb {
+    background-color: #444; /* Thumb color */
+    border-radius: 6px; /* Rounded corners for the thumb */
+  }
+  
+  .chat-area::-webkit-scrollbar-track {
+    background-color: #666; /* Track color */
+  }
+  
+  
+  .chat-messages {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .message {
+    margin-bottom: 10px;
+    background-color: #555; /* Dark blur background color */
+    padding: 10px;
+    border-radius: 4px;
+    color: #fff;
+  }
+  
+  .user-input {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #444; /* Dark blur background color */
+  }
+  
+  #message-input {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  #send-button {
+    padding: 8px 16px;
+    margin-left: 10px;
+    background-color: #666; /* Dark button color */
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  #send-button:hover {
+    background-color: #444; /* Darkened button color */
+  }
+  

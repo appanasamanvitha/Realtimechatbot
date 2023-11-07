@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+      background-image: url('https://static.tweaktown.com/news/8/6/86816_07_google-engineer-ai-chatbot-is-sentient-tells-the-to-lawyer-up_full.jpg'); 
+      background-size: cover; 
+      background-repeat: no-repeat;
+    }
+
+    .login-container {
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 24px;
+    }
+
+    label {
+      display: block;
+      font-size: 18px; 
+      text-align: left;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0;
+      font-size: 18px; 
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 18px; 
+    }
+    
+    .input-group {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+  </style>
+  <title>Login - Real-Time Chat Application</title>
+</head>
+<body>
+  <div class="login-container">
+    <h1>Login to Chat</h1>
+    <form id="login-form">
+      <div class="input-group">
+        <label for="username"><b>Username:</b></label>
+        <input type="text" id="username" placeholder="Enter your username" required>
+      </div>
+      <div class="input-group">
+        <label for="password"><b>Password:</b></label>
+        <input type="password" id="password" placeholder="Enter your password" required>
+      </div>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const loginForm = document.getElementById('login-form');
+
+      loginForm.addEventListener('submit', function (event) {
+        event.preventDefault();
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+
+        
+        if (username && password) {
+          window.location.href = 'cb.html';
+        }
+      });
+    });
+  </script>
+</body>
+</html>
